@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Context_User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The Salesforce id of the user running the process the event was generated from.</description>
+    <externalId>false</externalId>
+    <label>Context User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Log_Entries</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Exception__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>True if the ERROR log stemmed from a caught exception</description>
+    <externalId>false</externalId>
+    <label>Is Exception?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
