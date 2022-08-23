@@ -4,14 +4,14 @@
 
 ## Overview
 
-Another logging framework! I wanted a fast, no frills logger to store durable logs for future viewing without require an active debug trace. The main point is to be incredibly simpe to use, without all of the bloat of some of the more popular logging frameworks.   
+Another logging framework! I wanted a fast, no frills logger to store durable logs for future viewing without requiring an active debug trace. The main point is to be incredibly simple to use, without all of the bloat of some of the more popular logging frameworks.   
 
 **Deploy to Salesforce Org:**
 [![Deploy](https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png)](https://githubsfdeploy.herokuapp.com/?owner=seesharpist&repo=Nova-Salesforce-Logger&ref=main)
 
 ## Features: ##
  - **Single-line API** for logging events within Salesforce
- - Leverages Salesforce's **Platform Event** architecture for real-real teim event monitoring and robust integrations 
+ - Leverages Salesforce's **Platform Event** architecture for real-time event monitoring and robust integrations 
  - Uses out-of-the-box Apex **LoggingLevel** enum values
  - Included batch/scheduled class delete log records as defined by your own retention policy
  - Customizable, single-page Logging Dashboard  
@@ -28,7 +28,7 @@ Logging an **exception** is no exception. Just call from the catch of a `try/cat
 
 ```java
 try {
-  Integer uhoh = 3/0;
+  Integer ohno = 3/0;
 }
 catch(Exception e) {
   Logger.exception('ErrorMcErrorface', e);
@@ -36,7 +36,7 @@ catch(Exception e) {
 ```
 **Note:** All logging calls will log to console AND generate a log entry event EXCEPT '.debug', which only logs to console.
 
-Most **LoggingLevel** values are supported.
+Most **LoggingLevel** values are currently supported.
 * `debug()`
 * `info()`
 * `warn()`
@@ -44,11 +44,11 @@ Most **LoggingLevel** values are supported.
 * `exception()`
 
 ## Deleting Logs
-Two Apex classes are provided out-of-the-box to handle automatically deleting old logs
+Two Apex classes are provided out-of-the-box to handle automatically deleting old logs:
 
- - 'LogEntryCleanupBatch' - this batch Apex class will delete any Log_Entry__c records older than a specified number of days defined inside an Application Configuration mdt record (Log_Retention_Duration). Defaults to thirty (30) days.
+ - 'LogEntryCleanupBatch' - this batch Apex class will delete any Log_Entry__c records older than a specified number of days, defined inside an Application Configuration mdt record (Log_Retention_Duration). Defaults to thirty (30) days.
 
- - 'LogEntryCleanupSchedulable' - this schedulable Apex class can be schedule to run 'LogEntryCleanupBatch' on a custom basis, usually daily.
+ - 'LogEntryCleanupScheduler' - this schedulable Apex class can be scheduled to run 'LogEntryCleanupBatch' on a custom basis, usually daily.
 
 
 ## Future State!
