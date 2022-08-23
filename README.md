@@ -1,4 +1,5 @@
 # Nova Salesforce Logging Framework
+[![Build](https://github.com/SeeSharpist/Nova-Salesforce-Logger/actions/workflows/code-coverage.yml/badge.svg)](https://github.com/SeeSharpist/Nova-Salesforce-Logger/actions/workflows/code-coverage.yml)
 [![codecov](https://codecov.io/gh/SeeSharpist/Nova-Salesforce-Logger/branch/main/graph/badge.svg?token=4EJQHWO065)](https://codecov.io/gh/SeeSharpist/Nova-Salesforce-Logger)
 
 ## Overview
