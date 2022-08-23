@@ -18,7 +18,6 @@ Another logging framework! I wanted a fast, no frills logger to store durable lo
 
 
 ## Usage
-
 To create a new durable log record, call a single method for the required log type needed from **Logger.cls**. Pass in the Class name you are logging from and a message you'd like to log. Here is an example for creating an 'INFO' level log:
 
 ```java
