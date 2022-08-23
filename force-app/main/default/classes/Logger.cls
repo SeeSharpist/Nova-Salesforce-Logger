@@ -1,7 +1,7 @@
 /**
  * @description Global class to durably log events and exception data
  */
-global class Logger {
+public class Logger {
     /** standard exception data format string  */
     private static final String EXCEPTION_STACK_TRACE_MESSAGE = '[EXCEPTION TYPE]: {0} | [LINE NUMBER]: {1} | [STACK TRACE]: {2}';
     
@@ -10,7 +10,7 @@ global class Logger {
      * @param context (String): The apex class or process the event is being generated from
      * @param message (String): The message being logged 
      */
-    global static void debug(String context, String message){
+    public static void debug(String context, String message){
         publishLogEntryEvent(LoggingLevel.DEBUG, context, message);
     }
     
@@ -19,7 +19,7 @@ global class Logger {
      * @param context (String): The apex class or process the event is being generated from
      * @param message (String): The message being logged 
      */
-    global static void info(String context, String message){
+    public static void info(String context, String message){
         publishLogEntryEvent(LoggingLevel.INFO, context, message);
     }
     
@@ -28,7 +28,7 @@ global class Logger {
      * @param context (String): The apex class or process the event is being generated from
      * @param message (String): The message being logged 
      */
-    global static void warn(string context, string message){
+    public static void warn(string context, string message){
         publishLogEntryEvent(LoggingLevel.WARN, context, message);
     }
     
@@ -37,7 +37,7 @@ global class Logger {
      * @param context (String): The apex class or process the event is being generated from
      * @param message (String): The message being logged 
      */
-    global static void error(String context, String message){
+    public static void error(String context, String message){
         publishLogEntryEvent(LoggingLevel.ERROR, context, message);
     }
     
@@ -46,7 +46,7 @@ global class Logger {
      * @param context (String): The apex class or process the event is being generated from
      * @param message (String): The message being logged 
      */
-    global static void exception(string context, Exception e){
+    public static void exception(string context, Exception e){
         publishLogEntryEventBase(LoggingLevel.ERROR, context , '', e);
     }
     
