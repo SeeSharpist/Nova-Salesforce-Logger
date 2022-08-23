@@ -1,4 +1,5 @@
 # Nova Salesforce Logging Framework
+[![codecov](https://codecov.io/gh/SeeSharpist/branch/main/graph/badge.svg?token=4EJQHWO065)](https://app.codecov.io/gh/SeeSharpist/Nova-Salesforce-Logger)
 
 ## Overview
 
