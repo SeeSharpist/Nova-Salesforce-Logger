@@ -44,7 +44,6 @@ $RECYCLE.BIN/
 .husky/
 .prettierrc
 .vscode/
-config/
 jest.config.js
 manifest/
 package.json
