@@ -1,6 +1,7 @@
 # Nova Salesforce Logging Framework
 [![Build](https://github.com/SeeSharpist/Nova-Salesforce-Logger/actions/workflows/build.yml/badge.svg)](https://github.com/SeeSharpist/Nova-Salesforce-Logger/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/SeeSharpist/Nova-Salesforce-Logger/branch/main/graph/badge.svg?token=4EJQHWO065)](https://codecov.io/gh/SeeSharpist/Nova-Salesforce-Logger)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/03b99269fb754427a7cf09d18fe729e1)](https://www.codacy.com/gh/SeeSharpist/Nova-Salesforce-Logger/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SeeSharpist/Nova-Salesforce-Logger&amp;utm_campaign=Badge_Grade)
 
 ## Overview
 
